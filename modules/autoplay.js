@@ -7,6 +7,6 @@ const autoPlay = (swiperSlides, active) => {
     }
     swiperSlides[active].classList.add("show");
     console.log(active);
-  }, 5000);
+  }, 10000);
 };
 export default autoPlay;
