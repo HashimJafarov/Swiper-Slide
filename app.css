@@ -5,6 +5,9 @@
   text-decoration: none;
   list-style: none;
 }
+.red {
+  background-color: red !important;
+}
 section {
   height: 100vh;
   display: flex;
@@ -64,4 +67,7 @@ section {
 }
 .pagination li {
   font-size: 22px;
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 7px;
 }
