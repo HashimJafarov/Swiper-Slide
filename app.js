@@ -5,12 +5,13 @@ const nextBtn = document.getElementById("next");
 const swiperSlides = document.querySelectorAll(".swiper_slide");
 const pagination = document.querySelector(".pagination");
 let active = 0;
-autoPlay(swiperSlides, active);
 const getPage = (index) => {
   swiperSlides[active]?.classList?.remove("show");
   active = index;
   swiperSlides[active].classList.add("show");
 };
+
+autoPlay(swiperSlides, active);
 createPagination(swiperSlides, pagination, getPage, active);
 nextBtn.addEventListener("click", () => {
   swiperSlides[active].classList.remove("show");
